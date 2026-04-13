@@ -1,10 +1,10 @@
 # BlendAI: Autonomous Agent Swarm for Blender (v1.7.0)
 
 > [!CAUTION]
-> **EXPERIMENTAL RELEASE & NOT FIELD TESTED**: BlendAI was built as a rapid "One-Day Sprint." While it has passed a rigorous 18-suite automated QA audit (100% Solid Green), it has **NOT** been field-tested in large-scale production scenes. **Expect bugs and edge-case failures.**
+> **EXPERIMENTAL RELEASE & NOT FIELD TESTED**: BlendAI was built as a rapid "One-Day Sprint." While it has passed a rigorous 18-suite automated QA audit (and is undergoing a 25+ Titanium Suite expansion), it has **NOT** been field-tested in large-scale production scenes. **Expect bugs and edge-case failures.**
 
 > [!WARNING]
-> **CODE SAFETY**: Always save your work before executing AI-generated scripts. While the internal **Shielded Context** engine redacts malicious code, the system is probabilistic and may still produce logical errors that could affect your scene.
+> **AUTHOR'S NOTE OF UNCERTAINTY**: The creator (Ashley Immanuel) has not yet manually loaded the UI or executed AI scripts within a Blender environment. All "Green Light" status is currently based on automated AI-driven verification. Use with caution.
 
 ---
 
