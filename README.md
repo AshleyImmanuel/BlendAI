@@ -30,12 +30,21 @@ BlendAI manages its own lifecycle directly from the Blender interface.
 ---
 
 ## 🛡️ v1.7.0 Features
+- **Privacy First: Local AI Support**: Support for **Ollama**, **LM Studio**, and **Groq**. Just change the "API Base URL" in settings. Use your own hardware for $0.00 usage cost.
 - **Shielded Swarm Architecture**: Multi-layer defense against **Prompt Injection** and **Data Poisoning**.
 - **Non-Destructive Evolution**: Swarm saves new versions of skills (`_v2`, `_v3`) without overwriting your originals.
 - **Pro Skill Library**: Foldered repository (`backend/skills/`) pre-loaded with lighting and material experts.
 - **High-Speed Caching**: MTime-aware disk caching for near-instant mission planning.
 - **Persistent Memory**: Contextual session history stored in Markdown (`backend/memory/`).
 - **Professional Auditing**: Centralized technical logging in `blendai_swarm.log`.
+
+---
+
+## 🏠 Running Locally (Ollama)
+For 100% private, zero-cost AI:
+- **Endpoint**: Set your "API Base URL" to `http://localhost:11434/v1`.
+- **Key**: You still need to enter a placeholder string in the "API Key" field to satisfy the system.
+- **Model**: Matches your local model name (e.g., `llama3`, `mistral`).
 
 ---
 

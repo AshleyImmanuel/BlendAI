@@ -27,6 +27,11 @@ class BLENDAI_AddonPreferences(bpy.types.AddonPreferences):
         default="",
         subtype='PASSWORD'
     )
+    custom_base_url: bpy.props.StringProperty(  # type: ignore
+        name="API Base URL",
+        description="Custom endpoint for local AI (e.g. http://localhost:11434/v1 for Ollama)",
+        default="https://api.openai.com/v1",
+    )
     model: bpy.props.StringProperty(  # type: ignore
         name="Model",
         description="Select AI Model",
@@ -162,7 +167,8 @@ class BLENDAI_OT_RunSwarm(bpy.types.Operator):
                 "prompt": props.prompt,
                 "api_key": prefs.api_key,
                 "session_id": props.session_id,
-                "model": prefs.model
+                "model": prefs.model,
+                "base_url": prefs.custom_base_url
             }
             # Extended timeout for complex swarm discussion turns
             response = requests.post(f"{prefs.server_url}/run", json=payload, timeout=180) 
