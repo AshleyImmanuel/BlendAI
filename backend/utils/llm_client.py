@@ -35,11 +35,17 @@ class LLMClient:
         except Exception as e:
             # Map complex tracebacks into human-readable BlendAI errors
             msg = str(e).lower()
-            if "api key" in msg or "authentication" in msg:
+            
+            # Absolute Key Redaction: Scrub anything that looks like the provided key
+            # or matches common API key formats if they appear in error text
+            if self.api_key and self.api_key in str(e):
+                msg = str(e).replace(self.api_key, "[REDACTED_API_KEY]")
+            
+            if "api key" in msg or "authentication" in msg or "invalid_api_key" in msg:
                 raise Exception("Authentication Failed: Please check your API Key in Blender Preferences.")
-            if "rate limit" in msg or "429" in msg:
+            if "rate limit" in msg or "429" in msg or "rate_limit_exceeded" in msg:
                 raise Exception("API Rate Limit Reached: Please wait a moment before trying again.")
-            if "insufficient" in msg and "quota" in msg:
+            if ("insufficient" in msg and "quota" in msg) or "insufficient_quota" in msg:
                 raise Exception("API Quota Reached: Your provider account has run out of credits.")
             if "timeout" in msg:
                 raise Exception("API Request Timed Out: The provider is responding slowly.")

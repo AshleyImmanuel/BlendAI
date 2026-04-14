@@ -1,10 +1,11 @@
 import logging
-from typing import Optional
+from typing import Optional, List, Dict
 import sys
 import os
 import time
+import asyncio
 from collections import defaultdict
-from fastapi import FastAPI, HTTPException, Request  # type: ignore # noqa: F401
+from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect  # type: ignore # noqa: F401
 from pydantic import BaseModel  # type: ignore # noqa: F401
 import uvicorn  # type: ignore # noqa: F401
 
@@ -30,6 +31,30 @@ app = FastAPI(
     description="Backend API for the Autonomous BlendAI Swarm. Features safety guards, injection resistance, and rate limiting."
 )
 
+# --- WEBSOCKET CONNECTION MANAGER ---
+class ConnectionManager:
+    def __init__(self):
+        self.active_connections: Dict[str, List[WebSocket]] = defaultdict(list)
+
+    async def connect(self, websocket: WebSocket, session_id: str):
+        await websocket.accept()
+        self.active_connections[session_id].append(websocket)
+        logger.info(f"WebSocket connected: {session_id}")
+
+    def disconnect(self, websocket: WebSocket, session_id: str):
+        if websocket in self.active_connections[session_id]:
+            self.active_connections[session_id].remove(websocket)
+            logger.info(f"WebSocket disconnected: {session_id}")
+
+    async def broadcast(self, session_id: str, message: dict):
+        for connection in self.active_connections[session_id]:
+            try:
+                await connection.send_json(message)
+            except Exception as e:
+                logger.error(f"Failed to send WS message: {e}")
+
+manager = ConnectionManager()
+
 # --- SECURITY: RATE LIMITER ---
 class RateLimiter:
     def __init__(self, limit_per_minute: int = 10):
@@ -53,6 +78,7 @@ class RunRequest(BaseModel):
     session_id: str = "default_user"
     model: str = "gpt-4o"
     base_url: Optional[str] = None
+    scene_summary: Optional[str] = None
 
 class ResetRequest(BaseModel):
     session_id: str = "default_user"
@@ -61,10 +87,20 @@ class ResetRequest(BaseModel):
 def root():
     return {"message": "BlendAI Swarm is Online"}
 
+@app.websocket("/ws/progress/{session_id}")
+async def websocket_endpoint(websocket: WebSocket, session_id: str):
+    await manager.connect(websocket, session_id)
+    try:
+        while True:
+            # Keep connection alive
+            await websocket.receive_text()
+    except WebSocketDisconnect:
+        manager.disconnect(websocket, session_id)
+
 @app.post("/run")
-def run_ai(request: RunRequest):
+async def run_ai(request: RunRequest):
     """
-    Triggers the Autonomous Swarm logic with security guards.
+    Triggers the Autonomous Swarm logic with security guards and progress reporting.
     """
     logger.info(f"Received mission request for session: {request.session_id}")
     
@@ -85,29 +121,73 @@ def run_ai(request: RunRequest):
         raise HTTPException(status_code=400, detail="Prompt cannot be empty.")
     
     try:
+        # Define the callback for the swarm manager
+        def progress_callback(status):
+            # We need to bridge synchronous swarm to asynchronous websocket
+            # FastAPI's background tasks or looping through connections
+            loop = asyncio.get_event_loop()
+            asyncio.run_coroutine_threadsafe(
+                manager.broadcast(request.session_id, status),
+                loop
+            )
+
         swarm = SwarmManager(
             api_key=request.api_key,
             model=request.model,
             base_url=request.base_url
         )
         
-        # 3. Resolve through iterative swarm
-        result = swarm.resolve(request.session_id, request.prompt)
+        # 3. Resolve through iterative swarm (run in thread to avoid blocking loop)
+        # However, for simplicity in this setup, we call it directly if it's fast 
+        # but better to run in threadpool
+        loop = asyncio.get_event_loop()
+        result = await loop.run_in_executor(
+            None, 
+            swarm.resolve, 
+            request.session_id, 
+            request.prompt, 
+            request.scene_summary,
+            progress_callback
+        )
         
         return {
             "code": result["code"],
             "critic": result["report"],
-            "new_skill": result["new_skill"]
+            "new_skill": result["new_skill"],
+            "status": result.get("status", "OK"),
+            "reason": result.get("reason", "")
         }
         
     except Exception as e:
-        # 4. Error Scrubbing: Ensure no API keys are leaked in tracebacks
+        # 4. Error Scrubbing
         error_msg = str(e)
         if request.api_key in error_msg:
             error_msg = error_msg.replace(request.api_key, "[REDACTED]")
         
         logger.error(f"Internal Swarm Error: {error_msg}")
         raise HTTPException(status_code=500, detail="Internal Swarm Error. Key has been redacted for safety.")
+
+# --- EXECUTION BRIDGE (UI -> Blender) ---
+pending_execution: Dict[str, Optional[str]] = defaultdict(lambda: None)
+
+@app.post("/submit_execution/{session_id}")
+async def submit_execution(session_id: str, request: dict):
+    """Web UI calls this to send generated code back to Blender."""
+    code = request.get("code")
+    if code:
+        pending_execution[session_id] = code
+        logger.info(f"Execution pending for session: {session_id}")
+        return {"status": "queued"}
+    return {"status": "error", "message": "No code provided"}
+
+@app.get("/get_pending_code/{session_id}")
+async def get_pending_code(session_id: str):
+    """Blender polls this to see if the UI has sent code to execute."""
+    code = pending_execution.get(session_id)
+    if code:
+        pending_execution[session_id] = None # Clear after retrieval
+        return {"code": code}
+    return {"code": None}
 
 @app.post("/reset")
 def reset_memory(request: ResetRequest):
@@ -117,9 +197,6 @@ def reset_memory(request: ResetRequest):
     logger.info(f"Resetting history for session: {request.session_id}")
     persistent_memory.clear_session(request.session_id)
     return {"status": "BlendAI history cleared for session", "session_id": request.session_id}
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

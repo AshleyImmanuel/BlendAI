@@ -161,6 +161,28 @@ class BLENDAI_OT_RunSwarm(bpy.types.Operator):
         context.window_manager.modal_handler_add(self)
         return {'RUNNING_MODAL'}
 
+    def capture_scene_summary(self):
+        """Generates a compact text summary of the current Blender scene state."""
+        summary = []
+        summary.append(f"Active Object: {bpy.context.active_object.name if bpy.context.active_object else 'None'}")
+        
+        # Object Summary
+        summary.append("\nObjects in Scene:")
+        for obj in bpy.data.objects:
+            summary.append(f"- {obj.name} (Type: {obj.type}, Active: {obj == bpy.context.active_object})")
+            
+        # Material Summary
+        summary.append("\nMaterials:")
+        for mat in bpy.data.materials:
+            summary.append(f"- {mat.name}")
+            
+        # Collection Summary
+        summary.append("\nCollections:")
+        for coll in bpy.data.collections:
+            summary.append(f"- {coll.name}")
+            
+        return "\n".join(summary)
+
     def call_backend(self, props, prefs):
         try:
             payload = {
@@ -168,7 +190,8 @@ class BLENDAI_OT_RunSwarm(bpy.types.Operator):
                 "api_key": prefs.api_key,
                 "session_id": props.session_id,
                 "model": prefs.model,
-                "base_url": prefs.custom_base_url
+                "base_url": prefs.custom_base_url,
+                "scene_summary": self.capture_scene_summary()
             }
             # Extended timeout for complex swarm discussion turns
             response = requests.post(f"{prefs.server_url}/run", json=payload, timeout=180) 
@@ -204,8 +227,55 @@ class BLENDAI_OT_RunSwarm(bpy.types.Operator):
                 props.last_error = str(e)
         context.window_manager.event_timer_remove(self._timer)
 
+class BLENDAI_OT_OpenAssistant(bpy.types.Operator):
+    """Opens the High-Fidelity BlendAI Assistant in your browser"""
+    bl_idname = "blendai.open_assistant" # type: ignore
+    bl_label = "Open Assistant" # type: ignore
+    
+    def execute(self, context):
+        import webbrowser
+        prefs = context.preferences.addons[__package__ if __package__ else __name__].preferences
+        # The frontend will be served at http://localhost:8000 (standard for our setup)
+        # or we could use the Vite port 5173 during dev. 
+        # For now, we'll assume the backend serves it or use Vite for dev.
+        webbrowser.open("http://localhost:5173") 
+        # Start the polling timer
+        bpy.ops.blendai.poll_bridge('INVOKE_DEFAULT')
+        return {'FINISHED'}
+
+class BLENDAI_OT_PollBridge(bpy.types.Operator):
+    """Polls the backend for code sent from the web UI"""
+    bl_idname = "blendai.poll_bridge" # type: ignore
+    bl_label = "Poll Bridge" # type: ignore
+    
+    _timer = None
+
+    def modal(self, context, event):
+        if event.type == 'TIMER':
+            self.check_for_code(context)
+        return {'PASS_THROUGH'}
+
+    def execute(self, context):
+        self._timer = context.window_manager.event_timer_add(1.0, window=context.window)
+        context.window_manager.modal_handler_add(self)
+        return {'RUNNING_MODAL'}
+
+    def check_for_code(self, context):
+        prefs = context.preferences.addons[__package__ if __package__ else __name__].preferences
+        props = context.scene.blendai_props
+        try:
+            response = requests.get(f"{prefs.server_url}/get_pending_code/{props.session_id}", timeout=1)
+            if response.status_code == 200:
+                data = response.json()
+                if data.get("code"):
+                    self.report({'INFO'}, "BlendAI: Executing code from Assistant...")
+                    exec_globals = {"bpy": bpy, "math": __import__('math'), "mathutils": __import__('mathutils')}
+                    exec(data["code"], exec_globals)
+        except:
+            pass
+
 class VIEW3D_PT_blendai_panel(bpy.types.Panel):
-    bl_label = "BlendAI"
+    bl_label = "BlendAI Swarm"
     bl_idname = "VIEW3D_PT_blendai_panel"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
@@ -215,19 +285,28 @@ class VIEW3D_PT_blendai_panel(bpy.types.Panel):
         layout = self.layout
         props = context.scene.blendai_props
         
+        # New High-Fidelity Assistant Section
         box = layout.box()
-        box.prop(props, "prompt", text="Command")
+        box.label(text="AI Assistant (BETA)", icon='SOLO_ON')
+        col = box.column(align=True)
+        col.operator("blendai.open_assistant", icon='URL', text="Launch AI Copilot")
+        
+        layout.separator()
+        
+        # Legacy/Simple Panel (for quick commands)
+        box = layout.box()
+        box.label(text="Quick Command", icon='CONSOLE')
+        box.prop(props, "prompt", text="")
         
         row = layout.row()
-        row.scale_y = 1.6
         if props.is_running:
             row.label(text="Collaborating...", icon='URL')
         else:
-            row.operator("blendai.run_swarm", icon='PLAY', text="Run BlendAI Swarm")
+            row.operator("blendai.run_swarm", icon='PLAY', text="Invoke Swarm")
 
         if props.last_error:
             err = layout.box()
-            err.label(text="Troubleshooting:", icon='ERROR')
+            err.label(text="Error:", icon='ERROR')
             err.label(text=props.last_error)
 
 classes = (
@@ -236,6 +315,8 @@ classes = (
     BLENDAI_OT_StartServer,
     BLENDAI_Properties,
     BLENDAI_OT_RunSwarm,
+    BLENDAI_OT_OpenAssistant,
+    BLENDAI_OT_PollBridge,
     VIEW3D_PT_blendai_panel
 )
 

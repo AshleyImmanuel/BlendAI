@@ -2,13 +2,21 @@
 
 All notable changes to the **BlendAI Swarm** project will be documented in this file.
 
-## [1.7.0] - 2026-04-14
+## [v2.0.0-Beta] - 2026-04-14
+### Added
+- **Scene Awareness Engine**: Added capability for the AI to analyze existing Blender scene data-blocks.
+- **Hardened System Access**: Enabled `os` and `subprocess` imports within "Safe Zones".
+- **Directory Whitelisting**: Implemented a security guard to restrict file operations to project-related folders.
+- **Manual Approval Flow**: High-risk system commands now require explicit user clicks in the UI.
+- **Titanium v2.0 Audit**: Verified the entire swarm logic and security stack with a 32-suite automated gauntlet.
+
+## [1.8.0-Beta] - 2026-04-14
 ### Added
 - **Shielded Context Architecture**: Multi-layer defense against Indirect Prompt Injection and Data Poisoning.
 - **Stateless Scrubber**: High-speed regex engine for real-time redaction of malicious instruction overrides.
 - **Instruction Isolation**: Uses strict `[UNTRUSTED_DATA]` delimiters to prevent data-to-instruction leakage.
 - **MTime-Aware Caching**: Optimized Skill Library discovery with directory-modified timestamp caching.
-- **Professional Logging**: Integrated centralized logging suite (`blendai_swarm.log`) for technical audits.
+- **Professional Logging**: Integrated centralized logging suite (`backend/*.log`) for technical audits.
 
 ## [1.6.0] - 2026-04-13
 ### Added

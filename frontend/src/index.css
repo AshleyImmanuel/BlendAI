@@ -1,0 +1,344 @@
+:root {
+  --bg-color: #0d0f14;
+  --panel-bg: rgba(22, 26, 34, 0.95);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --accent-primary: #7c4dff;
+  --accent-secondary: #00e5ff;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --success-color: #00c853;
+  --warning-color: #ffd600;
+  --error-color: #ff5252;
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--text-primary);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  background: linear-gradient(145deg, #0d0f14 0%, #1a1e26 100%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo-text h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.logo-text p {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 200, 83, 0.1);
+  color: var(--success-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.backend-info {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Glassmorphism Panel */
+.main-panel {
+  flex: 1;
+  background: var(--panel-bg);
+  border: 1px border var(--border-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.chat-history {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Agent Status Components */
+.agent-status-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.agent-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  position: relative;
+}
+
+.agent-item::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 24px;
+  bottom: -8px;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.agent-item:last-child::before {
+  display: none;
+}
+
+.agent-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 12px;
+}
+
+.agent-item.done .agent-icon {
+  background: var(--success-color);
+  color: white;
+}
+
+.agent-item.active .agent-icon {
+  background: var(--accent-primary);
+  box-shadow: 0 0 10px var(--accent-primary);
+  animation: pulse 2s infinite;
+}
+
+.agent-info h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.agent-info p {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.agent-badge {
+  margin-left: auto;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.agent-badge.active { background: var(--accent-primary); }
+.agent-badge.waiting { color: var(--text-secondary); border: 1px solid var(--border-color); }
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Input Area */
+.input-section {
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper textarea {
+  background: transparent;
+  border: none;
+  color: white;
+  resize: none;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  min-height: 40px;
+}
+
+.input-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.send-btn {
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.send-btn:hover {
+  background: #6a3de6;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.action-chip {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.action-chip:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Result Card & Approval UI */
+.result-card {
+  margin-top: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.preview-placeholder {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.result-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.approval-block {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 82, 82, 0.1);
+  border-radius: 6px;
+  border-left: 3px solid var(--error-color);
+}
+
+.approval-reason {
+  font-size: 12px;
+  color: #ff9e9e;
+  margin-bottom: 12px;
+}
+
+.approval-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* Button Variants */
+button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primary-btn {
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid var(--border_color);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.danger-btn {
+  background: var(--error-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
