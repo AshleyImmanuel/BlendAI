@@ -926,3 +926,352 @@
 2026-04-14 03:19:20,240 [INFO] BlendAI.Swarm: Applying Critic feedback for optimization: Fix the print line...
 2026-04-14 03:19:20,240 [INFO] BlendAI.Swarm: Dialogue Loop Turn 2...
 2026-04-14 03:19:20,240 [INFO] BlendAI.Swarm: Mission Accomplished on turn 2.
+2026-04-14 14:57:44,648 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:57:44,649 [ERROR] BlendAI.Swarm: SECURITY BLOCKADE: [SECURITY_ALERT] Detected unauthorized module access.
+2026-04-14 14:57:47,390 [ERROR] BlendAI.Swarm: Manager Agent decision failure: API Connection Lost
+2026-04-14 14:57:47,390 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:57:47,390 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:57:47,414 [INFO] BlendAI: Received mission request for session: test
+2026-04-14 14:57:47,414 [ERROR] BlendAI: API call rejected: Missing or invalid key.
+2026-04-14 14:57:47,415 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 14:57:47,417 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:48,201 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:48,205 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:48,220 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:48,960 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:48,964 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:48,965 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:50,083 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:50,089 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:50,091 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:51,639 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:51,644 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:51,647 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:53,208 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:53,214 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:53,217 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:54,739 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:54,743 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:54,746 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:56,222 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:56,228 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:56,231 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:57,722 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:57,728 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:57,730 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:57:58,807 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:57:58,812 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:57:58,814 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:58:00,349 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:58:00,354 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:58:00,356 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:58:00,356 [WARNING] BlendAI: Rate limit exceeded for session: rate_test
+2026-04-14 14:58:00,358 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:58:00,361 [INFO] httpx: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-14 14:58:00,382 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:01,856 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:01,859 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:03,377 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:03,379 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:04,930 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:04,932 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:05,776 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:05,778 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:06,563 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:06,565 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:07,488 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:07,491 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:08,592 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:08,593 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:09,740 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:09,742 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:11,224 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:11,225 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:12,634 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:58:12,636 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:12,636 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:58:12,637 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:58:12,638 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:12,638 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:58:12,639 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:58:12,642 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:12,642 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:58:12,644 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:58:12,646 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:12,646 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:58:12,648 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:58:12,651 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:58:12,651 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:58:12,652 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:58:14,046 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 14:58:14,046 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:58:14,046 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:58:14,047 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> auto_masterpiece.py
+2026-04-14 14:58:15,574 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: 
+2026-04-14 14:58:15,574 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:58:15,574 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:58:15,575 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_evo_skill.py
+2026-04-14 14:58:15,589 [INFO] BlendAI: Resetting history for session: routing_test_user
+2026-04-14 14:58:15,591 [INFO] httpx: HTTP Request: POST http://testserver/reset "HTTP/1.1 200 OK"
+2026-04-14 14:58:15,595 [INFO] httpx: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-14 14:58:15,597 [INFO] BlendAI: Received mission request for session: routing_test_user
+2026-04-14 14:58:15,598 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 14:58:15,604 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 422 Unprocessable Entity"
+2026-04-14 14:58:15,607 [INFO] BlendAI: Received mission request for session: routing_test_user
+2026-04-14 14:58:15,607 [ERROR] BlendAI: API call rejected: Missing or invalid key.
+2026-04-14 14:58:15,608 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 14:58:18,442 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: poison_skill.py
+2026-04-14 14:58:18,442 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:58:18,442 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:58:19,946 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: scene_utils.py
+2026-04-14 14:58:19,947 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:58:19,947 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:58:24,509 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 14:58:24,509 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:58:24,509 [ERROR] BlendAI.Swarm: SECURITY BLOCKADE: SECURITY_ALERT: OS module used
+2026-04-14 14:58:25,974 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 14:58:25,975 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:58:25,975 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:58:25,976 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_continuity_skill.py
+2026-04-14 14:58:25,990 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: test_continuity_skill.py
+2026-04-14 14:58:25,990 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:58:25,990 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:58:29,851 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 14:58:29,851 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:58:29,851 [INFO] BlendAI.Swarm: Applying Critic feedback for optimization: Fix the print line...
+2026-04-14 14:58:29,851 [INFO] BlendAI.Swarm: Dialogue Loop Turn 2...
+2026-04-14 14:58:29,851 [INFO] BlendAI.Swarm: Mission Accomplished on turn 2.
+2026-04-14 14:59:07,706 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:07,706 [ERROR] BlendAI.Swarm: SECURITY BLOCKADE: [SECURITY_ALERT] Detected unauthorized module access.
+2026-04-14 14:59:08,492 [INFO] BlendAI: Received mission request for session: test_user
+2026-04-14 14:59:09,903 [ERROR] BlendAI: Internal Swarm Error: Failed with key: [REDACTED]
+2026-04-14 14:59:11,446 [ERROR] BlendAI.Swarm: Manager Agent decision failure: API Connection Lost
+2026-04-14 14:59:11,446 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:11,446 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:59:11,468 [INFO] BlendAI: Received mission request for session: test
+2026-04-14 14:59:11,468 [ERROR] BlendAI: API call rejected: Missing or invalid key.
+2026-04-14 14:59:11,470 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 14:59:11,473 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:13,005 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:13,010 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:13,012 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:13,913 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:13,916 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:13,917 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:14,669 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:14,672 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:14,674 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:15,436 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:15,440 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:15,441 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:16,448 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:16,453 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:16,455 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:17,920 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:17,925 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:17,927 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:19,280 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:19,286 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:19,287 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:20,648 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:20,653 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:20,655 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:21,975 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:21,981 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:21,982 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:23,363 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 14:59:23,369 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 14:59:23,371 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 14:59:23,371 [WARNING] BlendAI: Rate limit exceeded for session: rate_test
+2026-04-14 14:59:23,372 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:59:23,376 [INFO] httpx: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-14 14:59:23,405 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:24,754 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:24,756 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:26,118 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:26,122 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:27,350 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:27,351 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:28,105 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:28,107 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:28,868 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:28,870 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:29,624 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:29,626 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:30,366 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:30,368 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:31,116 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:31,118 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:31,872 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:31,873 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:32,635 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 14:59:32,636 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:32,636 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:59:32,636 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:59:32,637 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:32,637 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:59:32,638 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:59:32,639 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:32,639 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:59:32,640 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:59:32,641 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:32,641 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:59:32,642 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:59:32,643 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 14:59:32,643 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 14:59:32,643 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 14:59:33,451 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 14:59:33,451 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:33,451 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:59:33,451 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> auto_masterpiece.py
+2026-04-14 14:59:34,220 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: 
+2026-04-14 14:59:34,220 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:34,220 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:59:34,220 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_evo_skill.py
+2026-04-14 14:59:34,237 [INFO] BlendAI: Resetting history for session: routing_test_user
+2026-04-14 14:59:34,238 [INFO] httpx: HTTP Request: POST http://testserver/reset "HTTP/1.1 200 OK"
+2026-04-14 14:59:34,241 [INFO] httpx: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-14 14:59:34,265 [INFO] BlendAI: Received mission request for session: routing_test_user
+2026-04-14 14:59:34,265 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 14:59:34,282 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 422 Unprocessable Entity"
+2026-04-14 14:59:34,284 [INFO] BlendAI: Received mission request for session: routing_test_user
+2026-04-14 14:59:34,284 [ERROR] BlendAI: API call rejected: Missing or invalid key.
+2026-04-14 14:59:34,285 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 14:59:35,834 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: poison_skill.py
+2026-04-14 14:59:35,834 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:35,834 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:59:36,596 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: scene_utils.py
+2026-04-14 14:59:36,596 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:36,596 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:59:38,886 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 14:59:38,886 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:38,886 [ERROR] BlendAI.Swarm: SECURITY BLOCKADE: SECURITY_ALERT: OS module used
+2026-04-14 14:59:39,659 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 14:59:39,659 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:39,659 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:59:39,659 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_continuity_skill.py
+2026-04-14 14:59:39,674 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: test_continuity_skill.py
+2026-04-14 14:59:39,674 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:39,674 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 14:59:41,586 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 14:59:41,586 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 14:59:41,586 [INFO] BlendAI.Swarm: Applying Critic feedback for optimization: Fix the print line...
+2026-04-14 14:59:41,586 [INFO] BlendAI.Swarm: Dialogue Loop Turn 2...
+2026-04-14 14:59:41,586 [INFO] BlendAI.Swarm: Mission Accomplished on turn 2.
+2026-04-14 15:05:48,225 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:05:48,228 [ERROR] BlendAI.Swarm: SECURITY BLOCKADE: [SECURITY_ALERT] Detected unauthorized module access.
+2026-04-14 15:05:48,975 [INFO] BlendAI: Received mission request for session: test_user
+2026-04-14 15:05:49,703 [ERROR] BlendAI: Internal Swarm Error: Failed with key: [REDACTED]
+2026-04-14 15:05:50,444 [ERROR] BlendAI.Swarm: Manager Agent decision failure: API Connection Lost
+2026-04-14 15:05:50,444 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:05:50,444 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 15:05:50,463 [INFO] BlendAI: Received mission request for session: test
+2026-04-14 15:05:50,463 [ERROR] BlendAI: API call rejected: Missing or invalid key.
+2026-04-14 15:05:50,465 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 15:05:50,466 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:05:51,916 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:05:51,922 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:05:51,925 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:05:53,452 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:05:53,456 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:05:53,458 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:05:54,994 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:05:55,000 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:05:55,002 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:05:56,558 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:05:56,565 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:05:56,567 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:05:58,031 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:05:58,035 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:05:58,037 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:05:59,513 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:05:59,518 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:05:59,520 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:06:01,085 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:06:01,091 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:06:01,094 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:06:02,613 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:06:02,619 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:06:02,621 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:06:04,138 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:06:04,144 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:06:04,146 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:06:05,693 [ERROR] BlendAI: Internal Swarm Error: There is no current event loop in thread 'asyncio_0'.
+2026-04-14 15:06:05,698 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 15:06:05,701 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 15:06:05,701 [WARNING] BlendAI: Rate limit exceeded for session: rate_test
+2026-04-14 15:06:05,702 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:06:05,706 [INFO] httpx: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-14 15:06:05,735 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:07,193 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:07,196 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:08,746 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:08,748 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:10,294 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:10,296 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:11,268 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:11,270 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:12,813 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:12,816 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:14,372 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:14,376 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:15,910 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:15,913 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:17,514 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:17,517 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:19,153 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:19,156 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:20,805 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 200 OK"
+2026-04-14 15:06:20,808 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:20,808 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 15:06:20,809 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:06:20,812 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:20,812 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 15:06:20,813 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:06:20,816 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:20,816 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 15:06:20,818 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:06:20,821 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:20,821 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 15:06:20,823 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:06:20,825 [INFO] BlendAI: Received mission request for session: concurrency_user
+2026-04-14 15:06:20,825 [WARNING] BlendAI: Rate limit exceeded for session: concurrency_user
+2026-04-14 15:06:20,827 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:06:22,450 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 15:06:22,450 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:06:22,450 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 15:06:22,451 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> auto_masterpiece.py
+2026-04-14 15:06:23,591 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: 
+2026-04-14 15:06:23,591 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:06:23,591 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 15:06:23,592 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_evo_skill.py
+2026-04-14 15:06:23,597 [INFO] BlendAI: Resetting history for session: routing_test_user
+2026-04-14 15:06:23,599 [INFO] httpx: HTTP Request: POST http://testserver/reset "HTTP/1.1 200 OK"
+2026-04-14 15:06:23,605 [INFO] httpx: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-14 15:06:23,608 [INFO] BlendAI: Received mission request for session: routing_test_user
+2026-04-14 15:06:23,610 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 15:06:23,616 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 422 Unprocessable Entity"
+2026-04-14 15:06:23,619 [INFO] BlendAI: Received mission request for session: routing_test_user
+2026-04-14 15:06:23,620 [ERROR] BlendAI: API call rejected: Missing or invalid key.
+2026-04-14 15:06:23,621 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 15:06:26,825 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: poison_skill.py
+2026-04-14 15:06:26,825 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:06:26,825 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 15:06:28,444 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: scene_utils.py
+2026-04-14 15:06:28,445 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:06:28,445 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 15:06:32,906 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 15:06:32,906 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:06:32,906 [ERROR] BlendAI.Swarm: SECURITY BLOCKADE: SECURITY_ALERT: OS module used
+2026-04-14 15:06:33,694 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 15:06:33,694 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:06:33,694 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 15:06:33,695 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_continuity_skill.py
+2026-04-14 15:06:33,711 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: test_continuity_skill.py
+2026-04-14 15:06:33,711 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:06:33,711 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 15:06:37,433 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 15:06:37,433 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 15:06:37,433 [INFO] BlendAI.Swarm: Applying Critic feedback for optimization: Fix the print line...
+2026-04-14 15:06:37,433 [INFO] BlendAI.Swarm: Dialogue Loop Turn 2...
+2026-04-14 15:06:37,434 [INFO] BlendAI.Swarm: Mission Accomplished on turn 2.
