@@ -13,7 +13,7 @@ bl_info = {
     "version": (2, 0, 0),
     "blender": (3, 0, 0),
     "location": "Edit > Preferences > Addons > BlendAI | View3D > Sidebar",
-    "description": "Assistant for Blender: Scene Awareness & Hardened System Action Swarm (v2.0.0 Beta)",
+    "description": "Assistant for Blender (v2.0 Beta). EXPERIMENTAL & UNTESTED: Verified by AI Audit only. Use at your own risk.",
     "category": "Object",
 }
 
