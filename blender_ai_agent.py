@@ -10,10 +10,10 @@ import os
 bl_info = {
     "name": "BlendAI Swarm",
     "author": "Ashley Immanuel",
-    "version": (1, 7, 0),
+    "version": (2, 0, 0),
     "blender": (3, 0, 0),
     "location": "Edit > Preferences > Addons > BlendAI | View3D > Sidebar",
-    "description": "EXPERIMENTAL: Use at your own risk. The author (Ashley Immanuel) is not responsible for data loss. Sorry for any trouble caused. (v1.7.0 Swarm)",
+    "description": "Assistant for Blender: Scene Awareness & Hardened System Action Swarm (v2.0.0 Beta)",
     "category": "Object",
 }
 
