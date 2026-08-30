@@ -1,0 +1,192 @@
+2026-04-14 02:54:25,618 [INFO] BlendAI: Received mission request for session: test
+2026-04-14 02:54:25,619 [ERROR] BlendAI: API call rejected: Missing or invalid key.
+2026-04-14 02:54:25,620 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 02:54:25,622 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:27,492 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:27,493 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:27,896 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:27,896 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:27,898 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:27,902 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:30,134 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:30,134 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:30,580 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:30,581 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:30,582 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:30,586 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:32,689 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:32,690 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:33,166 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:33,167 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:33,168 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:33,180 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:35,240 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:35,240 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:35,778 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:35,779 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:35,781 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:35,782 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:37,872 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:37,873 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:38,246 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:38,247 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:38,249 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:38,252 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:40,302 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:40,302 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:40,766 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:40,766 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:40,769 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:40,772 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:42,794 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:42,795 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:43,211 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:43,211 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:43,213 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:43,217 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:45,221 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:45,221 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:45,655 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:45,655 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:45,656 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:45,659 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:47,334 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:47,335 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:47,779 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:47,779 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:47,781 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:47,785 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:49,795 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:49,796 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:50,277 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 02:54:50,278 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 02:54:50,279 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 02:54:50,282 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 02:54:50,282 [WARNING] BlendAI: Rate limit exceeded for session: rate_test
+2026-04-14 02:54:50,284 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 02:54:50,302 [INFO] httpx: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-14 02:54:51,846 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 02:54:51,846 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 02:54:51,846 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 02:54:51,848 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> auto_masterpiece.py
+2026-04-14 02:54:52,720 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: 
+2026-04-14 02:54:52,720 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 02:54:52,720 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 02:54:52,721 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_evo_skill.py
+2026-04-14 02:54:55,761 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: poison_skill.py
+2026-04-14 02:54:55,762 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 02:54:55,762 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 02:54:57,297 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: scene_utils.py
+2026-04-14 02:54:57,298 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 02:54:57,298 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 02:55:01,143 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 02:55:01,144 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 02:55:01,144 [ERROR] BlendAI.Swarm: SECURITY BLOCKADE: SECURITY_ALERT: OS module used
+2026-04-14 02:55:01,953 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 02:55:01,953 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 02:55:01,953 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 02:55:01,954 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_continuity_skill.py
+2026-04-14 02:55:01,958 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: test_continuity_skill.py
+2026-04-14 02:55:01,958 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 02:55:01,958 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 02:55:05,282 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 02:55:05,282 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 02:55:05,282 [INFO] BlendAI.Swarm: Applying Critic feedback for optimization: Fix the print line...
+2026-04-14 02:55:05,282 [INFO] BlendAI.Swarm: Dialogue Loop Turn 2...
+2026-04-14 02:55:05,282 [INFO] BlendAI.Swarm: Mission Accomplished on turn 2.
+2026-04-14 03:00:40,804 [INFO] BlendAI: Received mission request for session: test
+2026-04-14 03:00:40,804 [ERROR] BlendAI: API call rejected: Missing or invalid key.
+2026-04-14 03:00:40,806 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 400 Bad Request"
+2026-04-14 03:00:40,808 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:42,811 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:42,812 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:43,197 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:43,197 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:43,199 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:43,201 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:44,460 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:44,460 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:44,988 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:44,988 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:44,989 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:44,991 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:46,295 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:46,295 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:46,784 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:46,784 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:46,785 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:46,793 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:48,204 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:48,204 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:48,700 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:48,701 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:48,702 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:48,703 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:49,924 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:49,924 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:50,365 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:50,365 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:50,366 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:50,368 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:51,654 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:51,654 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:52,126 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:52,127 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:52,128 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:52,129 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:53,419 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:53,419 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:53,883 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:53,884 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:53,885 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:53,904 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:55,080 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:55,080 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:55,508 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:55,509 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:55,510 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:55,511 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:56,708 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:56,708 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:57,192 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:57,192 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:57,193 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:57,195 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:58,474 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:58,475 [ERROR] BlendAI.Swarm: Manager Agent decision failure: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:58,940 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-14 03:00:58,941 [ERROR] BlendAI: Internal Swarm Error: Authentication Failed: Please check your API Key in Blender Preferences.
+2026-04-14 03:00:58,942 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 500 Internal Server Error"
+2026-04-14 03:00:58,943 [INFO] BlendAI: Received mission request for session: rate_test
+2026-04-14 03:00:58,943 [WARNING] BlendAI: Rate limit exceeded for session: rate_test
+2026-04-14 03:00:58,944 [INFO] httpx: HTTP Request: POST http://testserver/run "HTTP/1.1 429 Too Many Requests"
+2026-04-14 03:00:58,953 [INFO] httpx: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-04-14 03:00:59,723 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 03:00:59,723 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 03:00:59,723 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 03:00:59,723 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> auto_masterpiece.py
+2026-04-14 03:01:00,493 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: 
+2026-04-14 03:01:00,493 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 03:01:00,493 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 03:01:00,494 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_evo_skill.py
+2026-04-14 03:01:02,056 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: poison_skill.py
+2026-04-14 03:01:02,056 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 03:01:02,056 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 03:01:02,829 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: scene_utils.py
+2026-04-14 03:01:02,830 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 03:01:02,830 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 03:01:05,116 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 03:01:05,116 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 03:01:05,116 [ERROR] BlendAI.Swarm: SECURITY BLOCKADE: SECURITY_ALERT: OS module used
+2026-04-14 03:01:05,867 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 03:01:05,867 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 03:01:05,867 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 03:01:05,868 [INFO] BlendAI.Swarm: Evolution promotion: New Skill Learned -> test_continuity_skill.py
+2026-04-14 03:01:05,870 [INFO] BlendAI.Swarm: Swarm Activated: Expert | Skills: test_continuity_skill.py
+2026-04-14 03:01:05,870 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 03:01:05,870 [INFO] BlendAI.Swarm: Mission Accomplished on turn 1.
+2026-04-14 03:01:07,784 [INFO] BlendAI.Swarm: Swarm Activated: Executor | Skills: 
+2026-04-14 03:01:07,784 [INFO] BlendAI.Swarm: Dialogue Loop Turn 1...
+2026-04-14 03:01:07,784 [INFO] BlendAI.Swarm: Applying Critic feedback for optimization: Fix the print line...
+2026-04-14 03:01:07,784 [INFO] BlendAI.Swarm: Dialogue Loop Turn 2...
+2026-04-14 03:01:07,785 [INFO] BlendAI.Swarm: Mission Accomplished on turn 2.

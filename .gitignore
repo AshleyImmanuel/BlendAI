@@ -1,0 +1,25 @@
+# BlendAI Swarm Git Ignore
+
+# Blender Temp Files
+*.blend1
+*.blend2
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+.env
+
+# BlendAI Local Data (Privacy)
+backend/memory/*.md
+backend/logs/*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
