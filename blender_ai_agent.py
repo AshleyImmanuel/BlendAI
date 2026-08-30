@@ -13,7 +13,7 @@ bl_info = {
     "version": (1, 7, 0),
     "blender": (3, 0, 0),
     "location": "Edit > Preferences > Addons > BlendAI | View3D > Sidebar",
-    "description": "Native, UX-Resilient Autonomous Agent Swarm with Pro Skill Library (v1.7.0 Protected)",
+    "description": "EXPERIMENTAL: Use at your own risk. The author (Ashley Immanuel) is not responsible for data loss. Sorry for any trouble caused. (v1.7.0 Swarm)",
     "category": "Object",
 }
 
